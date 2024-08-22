@@ -5,6 +5,12 @@
     .banner-text h1 {
         font-size: 3.2rem;
     }
+    .site-banner.sub-banner {
+        height: 400px;
+    }
+    .sub-banner .banner-text h1 {
+        font-size: 2.5rem;
+    }
 }
 @media(max-width:992px){
     html{
@@ -57,5 +63,91 @@
 
 
 @media(max-width:850px){
+    .featured-sec .col-md-6 {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .choose-sec .col-md-4 {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .golf-main .col-md-6 {
+        width: 100%;
+    }
+}
 
+@media(max-width:767px){
+    .footer-logo {
+        margin-bottom: 15px;
+    }
+    .footer-heading h4 {
+        margin-bottom: 10px;
+    }
+    .site-footer .col-md-4 {
+        margin: 15px 0;
+    }
+    .news-form {
+        max-width: 100%;
+    }
+}
+@media(max-width:575px){
+    .logo img {
+        max-width: 220px;
+    }
+    .site-header {
+        padding: 10px 0px;
+    }
+    .site-banner {
+        height: 450px;
+    }
+    .banner-text h1 {
+        font-size: 3rem;
+    }
+    .site-heading h2 {
+        font-size: 2.3rem;
+    }
+    .site-heading {
+        padding: 10px 0;
+    }
+    .featured-wrap, .golf-wrap {
+        padding: 15px;
+    }
+    .featured-img {
+        height: 300px;
+    }
+    .newsletter-heading h3 {
+        padding: 0 0px;
+    }
+    .news-form input {
+        width: 100%;
+    }
+    .news-form {
+        flex-wrap: wrap;
+    }
+    .news-form button {
+        width: 30%;
+        margin: auto;
+        margin-top: 15px;
+    }
+    .golf-img {
+        height: 300px;
+    }
+    
+}
+@media(max-width:375px){
+    html{
+        font-size: 14px;
+    }
+    .logo img {
+        max-width: 200px;
+    }
+
+    .featured-img, .golf-img {
+        height: 250px;
+    }
+
+    .footer-logo img {
+        max-width: 230px;
+    }
+   
 }

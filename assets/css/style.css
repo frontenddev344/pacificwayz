@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 html{
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 *{
@@ -46,7 +47,13 @@ ul{
     padding: 15px 20px;
     overflow-x: hidden;
 }
-
+.site-header.fixed {
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 99;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -71,10 +78,23 @@ ul{
     color: #fff;
     font-size: 1.125rem;
     transition: color 0.3s ease;
+    position: relative;
+}
+.nav-links a::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    height: 0px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+
 }
 
-.nav-links a:hover {
-    color: #5f4ae5;
+.nav-links a:hover::before, .nav-links a.active::before {
+height: 5px;
 }
 
 /* Burger menu */
@@ -190,6 +210,7 @@ ul{
     border-radius: 10px;
     border: 2px solid #002b5b;
     overflow: hidden;
+    height: 100%;
 }
 .featured-img {
     height: 350px;
@@ -496,10 +517,16 @@ button.accordion-button, .accordion-button:not(.collapsed) {
     height: 350px;
     overflow: hidden;
 }
+.golf-img:hover img{
+    transform: scale(1.2);
+
+}
 .golf-img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: all 0.3s linear;
+
 }
 .golf-text h3 a{
     color: #002B5B;
