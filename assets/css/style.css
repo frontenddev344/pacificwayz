@@ -651,4 +651,7 @@ a.morelesss-button {
     text-decoration: underline;
     font-weight: 500;
 }
+.location p i {
+    color: red;
+}
 /* pravicy policy page css end */
