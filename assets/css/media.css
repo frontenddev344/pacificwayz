@@ -149,5 +149,10 @@
     .footer-logo img {
         max-width: 230px;
     }
+    .wrapper {
+        bottom: 30px;
+        right: 10px;
+        max-width: 300px;
+    }
    
 }
